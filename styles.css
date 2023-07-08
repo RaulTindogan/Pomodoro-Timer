@@ -75,6 +75,16 @@ body {
     background-color: #FFDF2B;
 }
 
+.developer {
+    color: white;
+    text-align: center;
+}
+
+.developer__name {
+    display: block;
+    color: #FFDF2B;
+}
+
 .modal {
     display: none;
     position: absolute;
@@ -160,5 +170,9 @@ body {
     .container {
         width: 500px;
         padding: 50px;
+    }
+
+    .developer__name {
+        display: inline;
     }
 }
