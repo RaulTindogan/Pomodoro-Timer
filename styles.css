@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Creepster&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Libre+Franklin:wght@800&family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #212121;
+}
+
+.container {
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #1d064b;
+    border-radius: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__work {
+    color: #FFDF2B;
+    font-size: 4rem;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    border-radius: 50%;
+    border: #5F1FE6 5px solid;
+    background-color: #4618A8;
+}
+
+.clock__time {
+    color: #FFDF2B;
+    font-size: 3rem;
+}
+
+.controlls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controlls__button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: 2px solid #FFDF2B;
+    color: #FFDF2B;
+    border-radius: 50%;
+    background-color: #4618A8;
+    cursor: pointer;
+}
+
+.controlls__button:hover {
+    color: #4618A8;
+    background-color: #FFDF2B;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(32, 32, 32); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__container {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(62, 16, 153);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.modal__button--container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal__button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.modal__button--yes {
+    background-color: green;
+}
+
+.modal__button--no {
+    background-color: rgb(230, 40, 40);
+}
+
+.modal__button:hover {
+    color: black;
+    background-color: rgb(237, 234, 234);
+}
+
+.disabled {
+    background-color: gray;
+}
+
+.disabled:hover {
+    color: #FFDF2B;
+    background-color: gray;
+}
+
+
+
+@media screen and (min-width: 425px){
+    .container {
+        width: 350px;
+        padding: 50px;
+    }
+
+    .modal__container {
+        width: 350px;
+    }
+
+    .modal__question {
+        font-size: 1.3rem;
+    }
+
+    .modal__button {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        width: 500px;
+        padding: 50px;
+    }
+}

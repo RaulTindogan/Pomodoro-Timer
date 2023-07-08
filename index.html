@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1 class="menu__work">WORK</h1>
+        </div>
+        <div class="clock">
+            <div class="clock__time"></div>
+        </div>
+        <div class="controlls">
+            <!-- Temporary I'll put icons here later -->
+            <button class="controlls__button controlls__pause disabled" disabled><i class="fa-solid fa-stop"></i></button>
+            <button class="controlls__button controlls__start"><i class="fa-solid fa-play"></i></button>
+            <button class="controlls__button controlls__reset disabled" disabled><i class="fa-solid fa-arrow-rotate-left"></i></button>
+        </div>
+    </div>
+    <div class="modal" id="modal-1">
+        <div class="modal__container">
+            <h3 class="modal__question">Do you want to take a break?</h3>
+            <div class="modal__button--container">
+                <button class="modal__button modal__button--yes" id="modal__button--yes">Yes</button>
+                <button class="modal__button modal__button--no" id="modal__button--no">No</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-2">
+        <div class="modal__container">
+            <h3 class="modal__question">Let's Go!! Work! Work!</h3>
+            <div class="modal__button--container">
+                <button class="modal__button modal__button--yes" id="modal-continueBtn">continue</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
